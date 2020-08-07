@@ -52,4 +52,30 @@ public class 面试题09 {
         }
     }
 
+    class CQueue1 {
+        private Stack<Integer> stack1;
+        private Stack<Integer> stack2;
+
+        public CQueue1() {
+            stack1 = new Stack<>();
+            stack2 = new Stack<>();
+        }
+
+        public void appendTail(int value) {
+            stack1 = new Stack<>();
+            while (!stack2.isEmpty())
+                stack1.push(stack2.pop());
+            stack2.push(value);
+            while (!stack1.isEmpty())
+                stack2.push(stack1.pop());
+
+        }
+
+        public int deleteHead() {
+            if (stack2.isEmpty())
+                return -1;
+            return stack2.pop();
+        }
+    }
+
 }

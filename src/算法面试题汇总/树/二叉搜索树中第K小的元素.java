@@ -1,5 +1,7 @@
 package 算法面试题汇总.树;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.PriorityQueue;
 
 /**
@@ -32,5 +34,19 @@ public class 二叉搜索树中第K小的元素 {
         }
         preOrder(root.left, heap, k);
         preOrder(root.right, heap, k);
+    }
+
+    public int kthSmallest2(TreeNode root, int k) {
+        List<Integer> list = new ArrayList<>();
+        inOrder(root, list);
+        return list.get(k - 1);
+    }
+
+    public void inOrder(TreeNode root, List<Integer> list) {
+        if (root != null) {
+            inOrder(root.left, list);
+            list.add(root.val);
+            inOrder(root.right, list);
+        }
     }
 }

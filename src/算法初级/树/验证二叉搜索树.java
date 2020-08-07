@@ -1,5 +1,7 @@
 package 算法初级.树;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -35,6 +37,40 @@ public class 验证二叉搜索树 {
             node = temp.right;
         }
         return true;
+    }
+
+    public boolean isValidBST(TreeNode root) {
+
+        return helper(root, null, null);
+    }
+
+    public boolean helper(TreeNode root, Integer lower, Integer upper) {
+        if (root == null) return true;
+        int val = root.val;
+        if (lower != null && lower >= val) return false;
+        if (upper != null && upper <= val) return false;
+        return helper(root.left, lower, val) && helper(root.right, val, upper);
+    }
+
+
+    List<Integer> res = new ArrayList<>();
+
+    public boolean isValidBST2(TreeNode root) {
+        inOrder(root);
+
+        for (int i = 0; i < res.size() - 1; i++) {
+            if (res.get(i) >= res.get(i + 1))
+                return false;
+        }
+        return true;
+    }
+
+    public void inOrder(TreeNode node) {
+        if (node != null) {
+            inOrder(node.left);
+            res.add(node.val);
+            inOrder(node.right);
+        }
     }
 
     public static void main(String[] args) {

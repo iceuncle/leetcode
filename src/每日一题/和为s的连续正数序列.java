@@ -58,6 +58,8 @@ public class 和为s的连续正数序列 {
                 result.add(ret);
             }
         }
+
+
         return result.toArray(new int[0][]);
     }
 }

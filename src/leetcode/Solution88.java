@@ -46,16 +46,18 @@ public class Solution88 {
     }
 
     public void merge1(int[] nums1, int m, int[] nums2, int n) {
-        int index1 = m - 1;
-        int index2 = n - 1;
-        int size = m + n - 1;
-        while (index1 >= 0 && index2 >= 0) {
-            nums1[size--] = nums1[index1] >= nums2[index2] ? nums1[index1--] : nums2[index2--];
-        }
-        if (index2 >= 0) {
-            for (int i = 0; i <= index2; i++) {
-                nums1[i] = nums2[i];
+        int len = m + n - 1;
+        int lenA = m - 1;
+        int lenB = n - 1;
+        while (lenA >= 0 && lenB >= 0) {
+            if (nums1[lenA] > nums2[lenB]) {
+                nums1[len--] = nums1[lenA--];
+            } else {
+                nums1[len--] = nums1[lenB--];
             }
+        }
+        while (lenB >= 0) {
+            nums1[len--] = nums2[lenB--];
         }
     }
 

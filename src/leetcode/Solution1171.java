@@ -8,7 +8,7 @@ import java.util.HashMap;
  */
 public class Solution1171 {
 
-    public class ListNode {
+    public static class ListNode {
         int val;
         ListNode next;
 
@@ -40,6 +40,22 @@ public class Solution1171 {
             temp = temp.next;
         }
         return dummyHead.next;
+    }
+
+    public static void main(String[] args) {
+        Solution1171 solution = new Solution1171();
+
+        //1,2,-3,3,1
+        ListNode head = new ListNode(1);
+        ListNode head1 = new ListNode(2);
+        ListNode head2 = new ListNode(3);
+        ListNode head3 = new ListNode(-3);
+        ListNode head4 = new ListNode(-2);
+        head.next = head1;
+        head1.next = head2;
+        head2.next = head3;
+        head3.next = head4;
+        solution.removeZeroSumSublists(head);
     }
 
 }

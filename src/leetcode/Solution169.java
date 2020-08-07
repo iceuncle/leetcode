@@ -26,6 +26,22 @@ public class Solution169 {
         return res;
     }
 
+    public int majorityElementA(int[] nums) {
+        if (nums == null || nums.length == 0)
+            throw new IllegalArgumentException("illegal array");
+        int votes = 0;
+        int res = nums[0];
+        for (int i = 0; i < nums.length; i++) {
+            if (votes == 0) res = nums[i];
+            if (nums[i] == res) {
+                votes++;
+            } else {
+                votes--;
+            }
+        }
+        return res;
+    }
+
     public int majorityElement1(int[] nums) {
         Arrays.sort(nums);
         return nums[nums.length / 2];

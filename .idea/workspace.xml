@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="814b368f-f242-46d5-aaa7-549582ef7200" name="Default" comment="" />
+    <list default="true" id="814b368f-f242-46d5-aaa7-549582ef7200" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/Solution3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/Solution3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/Solution355.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/Solution355.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/Solution88.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/Solution88.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/剑指offer/面试题59I.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/剑指offer/面试题59I.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/探索字节跳动/链表和树/环形链表II.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/探索字节跳动/链表和树/环形链表II.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/算法初级/其他/位1的个数.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/算法初级/其他/位1的个数.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/算法初级/数学/Three的幂.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/算法初级/数学/Three的幂.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/算法初级/数组/加一.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/算法初级/数组/加一.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/算法初级/树/验证二叉搜索树.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/算法初级/树/验证二叉搜索树.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/算法面试题汇总/堆栈与队列/有序矩阵中第K小的元素.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/算法面试题汇总/堆栈与队列/有序矩阵中第K小的元素.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/算法面试题汇总/排序与检索/最大数.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/算法面试题汇总/排序与检索/最大数.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/算法面试题汇总/树/二叉搜索树中第K小的元素.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/算法面试题汇总/树/二叉搜索树中第K小的元素.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/算法面试题汇总/树/二叉树的最近公共祖先.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/算法面试题汇总/树/二叉树的最近公共祖先.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +37,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1a0hb3R6fRvMrBpQE4l5jKYsMJl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,6 +49,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -56,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.面试题12">
+  <component name="RunManager" selected="Application.Solution692">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -105,10 +125,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
+    <configuration name="Solution355" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.Solution355" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution692" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.Solution692" />
+      <module name="LeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -246,17 +286,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Test" />
       <item itemvalue="Application.数据流的中位数" />
       <item itemvalue="Application.面试题58I" />
       <item itemvalue="Application.面试题12" />
+      <item itemvalue="Application.Solution355" />
+      <item itemvalue="Application.Solution692" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution692" />
+        <item itemvalue="Application.Solution355" />
         <item itemvalue="Application.面试题12" />
         <item itemvalue="Application.面试题58I" />
         <item itemvalue="Application.数据流的中位数" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -306,6 +348,9 @@
       <workItem from="1585880143065" duration="8345000" />
       <workItem from="1586402347516" duration="922000" />
       <workItem from="1586425843261" duration="6774000" />
+      <workItem from="1595830812203" duration="6642000" />
+      <workItem from="1595991067739" duration="35761000" />
+      <workItem from="1596422768199" duration="17576000" />
     </task>
     <servers />
   </component>
@@ -320,6 +365,19 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="162" y="50" key="SettingsEditor" timestamp="1585883569841">

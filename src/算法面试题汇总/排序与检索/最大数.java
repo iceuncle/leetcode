@@ -1,7 +1,9 @@
 package 算法面试题汇总.排序与检索;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
 
 /**
  * <p>
@@ -26,6 +28,20 @@ public class 最大数 {
         }
         System.out.println(ret.toString());
         return ret.toString();
+    }
+
+    public String largestNumber1(int[] nums) {
+        List<Integer> list = new ArrayList<>();
+        for (int num : nums) list.add(num);
+        list.sort((o1, o2) -> {
+            return (o2.toString() + o1.toString()).compareTo(o1.toString() + o2.toString());
+        });
+        if (list.get(0) == 0) return "0";
+        StringBuilder res = new StringBuilder();
+        for (Integer integer : list) {
+            res.append(integer.toString());
+        }
+        return res.toString();
     }
 
     public static void main(String[] args) {

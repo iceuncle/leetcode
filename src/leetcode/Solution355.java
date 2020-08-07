@@ -6,21 +6,15 @@ package leetcode;
  */
 public class Solution355 {
     public String reverseWords(String s) {
-        String[] stringArr = s.split(" ");
-        for (int i = 0; i < stringArr.length; i++) {
-            stringArr[i] = reverse(stringArr[i]);
+        StringBuilder res = new StringBuilder();
+        String[] words = s.split(" ");
+        for (String word : words) {
+            res.append(reverse(word)).append(" ");
         }
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < stringArr.length; i++) {
-            builder.append(stringArr[i]);
-            if (i != stringArr.length - 1) {
-                builder.append(" ");
-            }
-        }
-        return builder.toString();
+        return res.substring(0, res.length() - 1);
     }
 
-    private String reverse(String s) {
+    public String reverse(String s) {
         char[] chars = s.toCharArray();
         int left = 0, right = s.length() - 1;
         while (left < right) {
@@ -32,7 +26,6 @@ public class Solution355 {
         }
         return String.valueOf(chars);
     }
-
     public static void main(String[] args) {
         System.out.println((new Solution355()).reverseWords(" "));
         System.out.println((new Solution355()).reverseWords("Let's take LeetCode contest"));

@@ -1,5 +1,8 @@
 package 剑指offer;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  * <p>
  * Created by tianyang on 2020/3/17.
@@ -38,6 +41,26 @@ public class 面试题59I {
             res[i] = max;
         }
         return res;
+    }
+
+    public int[] maxSlidingWindow1(int[] nums, int k) {
+        int len = nums.length - k + 1;
+        int[] resArr = new int[len];
+        Deque<Integer> queue = new ArrayDeque<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (!queue.isEmpty() && queue.getFirst() == i - k)
+                queue.removeFirst();
+            offer(queue, nums, i);
+            if (i >= k - 1)
+                resArr[i - k + 1] = nums[queue.getFirst()];
+        }
+        return resArr;
+    }
+
+    public void offer(Deque<Integer> queue, int[] nums, int i) {
+        while (!queue.isEmpty() && nums[queue.getLast()] < nums[i])
+            queue.removeLast();
+        queue.addLast(i);
     }
 
 }

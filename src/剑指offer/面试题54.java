@@ -36,4 +36,19 @@ public class 面试题54 {
         return heap.peek();
     }
 
+    public int kthLargest1(TreeNode root, int k) {
+        PriorityQueue<Integer> heap = new PriorityQueue<>();
+        preOrder(root, heap, k);
+        return heap.peek();
+    }
+
+    public void preOrder(TreeNode node, PriorityQueue<Integer> heap, int k) {
+        if (node == null) return;
+        heap.add(node.val);
+        if (heap.size() > k)
+            heap.poll();
+        preOrder(node.left, heap, k);
+        preOrder(node.right, heap, k);
+    }
+
 }

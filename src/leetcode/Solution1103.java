@@ -50,6 +50,21 @@ public class Solution1103 {
         return ret;
     }
 
+    public int[] distributeCandies2(int candies, int num_people) {
+        int[] res = new int[num_people];
+        int count = 1;
+        int index = 0;
+        while (candies - count > 0) {
+            res[index % num_people] += count;
+            candies = candies - count;
+            index++;
+            count++;
+        }
+        if (candies > 0)
+            res[index % num_people] += candies;
+        return res;
+    }
+
     public static void main(String[] args) {
         System.out.println((int) Math.sqrt(15));
     }
