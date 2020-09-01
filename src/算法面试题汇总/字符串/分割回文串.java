@@ -41,6 +41,7 @@ public class 分割回文串 {
             return;
         }
         for (int i = start; i < len; i++) {
+            System.out.printf("  start i" + start + i);
             if (!checkPalindrome(s, start, i)) {
                 continue;
             }
