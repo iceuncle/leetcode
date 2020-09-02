@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="814b368f-f242-46d5-aaa7-549582ef7200" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution1198.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution1246.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution131.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution384.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution409.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution56.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution820.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution93.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution945.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution836.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/leetcode/Solution1103.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/leetcode/Solution1103.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/leetcode/Solution1171$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/leetcode/Solution1171$ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/leetcode/Solution1171.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/leetcode/Solution1171.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/leetcode/Solution169.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/leetcode/Solution169.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/剑指offer/面试题09.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/剑指offer/面试题09.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/剑指offer/面试题54.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/剑指offer/面试题54.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/每日一题/和为s的连续正数序列.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/每日一题/和为s的连续正数序列.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/算法面试题汇总/堆栈与队列/滑动窗口最大值.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/算法面试题汇总/堆栈与队列/滑动窗口最大值.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/算法面试题汇总/字符串/分割回文串.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/算法面试题汇总/字符串/分割回文串.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/算法面试题汇总/字符串/分割回文串.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/算法面试题汇总/字符串/分割回文串.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -341,7 +323,7 @@
       <workItem from="1596422768199" duration="40676000" />
       <workItem from="1598238123853" duration="12735000" />
       <workItem from="1598409050172" duration="1449000" />
-      <workItem from="1598865046266" duration="14150000" />
+      <workItem from="1598865046266" duration="16620000" />
     </task>
     <servers />
   </component>
