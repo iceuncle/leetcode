@@ -45,6 +45,20 @@ public class Solution53 {
         return max;
     }
 
+    public int maxSubArray2(int[] nums) {
+        int res = nums[0];
+        int sum = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (sum > 0)
+                sum += nums[i];
+            else
+                sum = nums[i];
+            if (sum > res)
+                res = sum;
+        }
+        return res;
+    }
+
 
     public static void main(String[] args) {
         System.out.println((new Solution53()).maxSubArray(new int[]{-1, 1}));

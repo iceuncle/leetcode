@@ -32,6 +32,23 @@ import java.util.Set;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 class Solution3 {
+
+    public int lengthOfLongestSubstring1(String s) {
+        if (s.length() == 0) return 0;
+        HashMap<Character, Integer> map = new HashMap<>();
+        int max = 0;
+        int left = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (map.containsKey(s.charAt(i))) {
+                left = Math.max(left, map.get(s.charAt(i)) + 1);
+            }
+            map.put(s.charAt(i), i);
+            max = Math.max(max, i - left + 1);
+        }
+        return max;
+    }
+
+
     public int lengthOfLongestSubstring(String s) {
         int n = s.length();
         Set<Character> set = new HashSet<>();
@@ -64,7 +81,6 @@ class Solution3 {
         }
         return max;
     }
-
 
 
     public static void main(String[] args) {
