@@ -22,6 +22,7 @@ public class Solution131 {
             return;
         }
         for (int i = start; i < len; i++) {
+            System.out.println("start:" + start + " i:" + i + " isHuiWen:" + isHuiWen(s, start, i));
             if (!isHuiWen(s, start, i)) {
                 continue;
             }
@@ -41,6 +42,10 @@ public class Solution131 {
             right--;
         }
         return true;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new Solution131().partition("aab"));
     }
 
 }
