@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-//分割回文串
+//分割回文串 回溯
 public class Solution131 {
 
     public List<List<String>> partition(String s) {
