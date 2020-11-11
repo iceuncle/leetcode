@@ -1,12 +1,10 @@
-package 探索字节跳动.链表和树;
+package leetcode;
 
 import java.util.HashSet;
 
-/**
- * <p>
- * Created by tianyang on 2020/3/27.
- */
-public class 环形链表II {
+//环形链表II
+public class Solution142 {
+
     class ListNode {
         int val;
         ListNode next;
