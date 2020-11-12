@@ -1,25 +1,11 @@
-package leetcode;
+package 算法中极.排序与搜素;
 
-import java.util.Comparator;
+import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.Random;
 
-/**
- * <p>
- * Created by tianyang on 2020/3/11.
- * 15. 数组中的第K个最大元素
- * 在未排序的数组中找到第 k 个最大的元素。请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。
- * <p>
- * 示例 1:
- * <p>
- * 输入: [3,2,1,5,6,4] 和 k = 2
- * 输出: 5
- * 示例 2:
- * <p>
- * 输入: [3,2,3,1,2,4,5,5,6] 和 k = 4
- * 输出: 4
- */
-public class Solution215 {
+public class 数组中的第K个最大元素 {
+
 
     /**
      * 堆
@@ -132,7 +118,10 @@ public class Solution215 {
         for (int i = 0; i < 100; i++) {
             arr[i] = (int) (Math.random() * 100);
         }
-        int maxK = new Solution215().findKthLargest3(arr, 30);
+        int maxK = new 数组中的第K个最大元素().findKthLargest3(arr, 30);
         System.out.println(maxK);
     }
+
+
 }
+
