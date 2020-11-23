@@ -20,6 +20,6 @@ public class Solution300 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution300().lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18}));
+        System.out.println(new Solution300().lengthOfLIS(new int[]{0, 1, 0, 3, 2, 3}));
     }
 }

@@ -1,4 +1,4 @@
-package 每日一题;
+package other;
 
 import java.util.ArrayList;
 import java.util.List;

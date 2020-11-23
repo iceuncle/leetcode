@@ -1,4 +1,4 @@
-package 每日一题;
+package other;
 
 import java.util.Deque;
 import java.util.LinkedList;

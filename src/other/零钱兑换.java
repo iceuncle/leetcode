@@ -1,4 +1,4 @@
-package 每日一题;
+package other;
 
 /**
  * <p>
@@ -16,10 +16,10 @@ package 每日一题;
  * 输出: -1
  * <p>
  * <p>
- *
+ * <p>
  * f(n)   n==0 0
- *        n<0 -1
- *        n>0 min f(n-coin) + 1  coin in coins
+ * n<0 -1
+ * n>0 min f(n-coin) + 1  coin in coins
  */
 public class 零钱兑换 {
 
@@ -47,4 +47,7 @@ public class 零钱兑换 {
         return memo[amount];
     }
 
+    public static void main(String[] args) {
+        System.out.println(new 零钱兑换().coinChange(new int[]{1, 2, 5}, 11));
+    }
 }
