@@ -55,6 +55,13 @@ public class Solution79 {
                 {'A', 'B', 'C', 'E'},
                 {'S', 'F', 'C', 'S'},
                 {'A', 'D', 'E', 'E'}}, "ABCCED"));
+        System.out.println(new Solution79().exist(new char[][]{
+                {'C', 'A', 'A'},
+                {'A', 'A', 'A'},
+                {'B', 'C', 'D'}}, "AAB"));
+        boolean[][] visited = new boolean[3][4];
+        System.out.println(visited.length);
+        System.out.println(visited[0].length);
     }
 
 }

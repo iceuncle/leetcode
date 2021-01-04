@@ -12,7 +12,7 @@ public class Solution15 {
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(nums);
         for (int i = 0; i < length; i++) {
-            if (nums[i] > 0) continue;
+            if (nums[i] > 0) return res;
             if (i > 0 && nums[i] == nums[i - 1]) continue;
             int left = i + 1, right = length - 1;
             while (left < right) {
@@ -31,6 +31,10 @@ public class Solution15 {
             }
         }
         return res;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new Solution15().threeSum(new int[]{-4, 1, 1, 2, 2, 3}));
     }
 
 }

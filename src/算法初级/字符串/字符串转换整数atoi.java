@@ -43,7 +43,7 @@ public class 字符串转换整数atoi {
             i++;
         }
         try {
-            return Integer.valueOf(stringBuilder.toString());
+            return Integer.parseInt(stringBuilder.toString());
         } catch (Exception e) {
             if (stringBuilder.substring(0, 1).equals("-")) {
                 return Integer.MIN_VALUE;

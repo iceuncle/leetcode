@@ -54,9 +54,10 @@ public class 删除链表的倒数第N个节点 {
         ListNode first = dummyHead;
         ListNode second = dummyHead;
         for (int i = 0; i < n; i++) {
+            if (first == null) return null;
             first = first.next;
         }
-        while (first.next != null) {
+        while (first != null && first.next != null) {
             first = first.next;
             second = second.next;
         }

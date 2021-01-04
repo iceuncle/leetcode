@@ -38,20 +38,6 @@ public class Solution1 {
     }
 
 
-    public int[] twoSum1(int[] nums, int target) {
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            map.put(nums[i], i);
-        }
-        for (int i = 0; i < nums.length; i++) {
-            int b = target - nums[i];
-            if (map.containsKey(b) && map.get(b) != i) {
-                return new int[]{i, map.get(b)};
-            }
-        }
-        throw new IllegalArgumentException("No solution");
-    }
-
     public int[] twoSum2(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {

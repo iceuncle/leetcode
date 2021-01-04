@@ -36,6 +36,22 @@ public class Solution7 {
         return (int) res;
     }
 
+    public int reverse1(int x) {
+        StringBuilder res = new StringBuilder();
+        if (x < 0) res.append("-");
+        int carry = 0;
+        while (x != 0) {
+            carry = x % 10;
+            x = x / 10;
+            res.append(Math.abs(carry));
+        }
+        try {
+            return Integer.parseInt(res.toString());
+        } catch (Exception e) {
+            return 0;
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println((new Solution7().reverse(123)));
         System.out.println((new Solution7().reverse(-123)));

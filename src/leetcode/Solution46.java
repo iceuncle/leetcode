@@ -26,6 +26,7 @@ public class Solution46 {
             return;
         }
         for (int i = 0; i < nums.length; i++) {
+            System.out.println("i " + i + "  index " + index);
             if (!used[i]) {
                 stack.push(nums[i]);
                 used[i] = true;

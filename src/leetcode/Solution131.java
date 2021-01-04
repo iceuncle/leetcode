@@ -22,7 +22,7 @@ public class Solution131 {
             return;
         }
         for (int i = start; i < len; i++) {
-            System.out.println("start:" + start + " i:" + i + " isHuiWen:" + isHuiWen(s, start, i));
+            System.out.println("start:" + start + " i:" + i + " isHuiWen:" + isHuiWen(s, start, i) + " " + s.substring(start, i + 1));
             if (!isHuiWen(s, start, i)) {
                 continue;
             }

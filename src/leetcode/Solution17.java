@@ -23,7 +23,7 @@ public class Solution17 {
             put('8', "tuv");
             put('9', "wxyz");
         }};
-        backTracking(digits, map, 0, new StringBuilder(), res);
+        StringBuilder path = new StringBuilder();
         return res;
     }
 
