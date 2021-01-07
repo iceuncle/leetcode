@@ -63,12 +63,12 @@ import java.util.HashMap;
 public class 有效的数独 {
 
     public boolean isValidSudoku(char[][] board) {
-        HashMap<Integer, Integer>[] rows = new HashMap[9];
-        HashMap<Integer, Integer>[] columns = new HashMap[9];
-        HashMap<Integer, Integer>[] boxes = new HashMap[9];
+        HashMap<Character, Integer>[] rows = new HashMap[9];
+        HashMap<Character, Integer>[] columns = new HashMap[9];
+        HashMap<Character, Integer>[] boxes = new HashMap[9];
 
         for (int i = 0; i < 9; i++) {
-            rows[i] = new HashMap<>();
+            rows[i] = new HashMap<Character, Integer>();
             columns[i] = new HashMap<>();
             boxes[i] = new HashMap<>();
         }
@@ -78,7 +78,7 @@ public class 有效的数独 {
                 if (board[i][j] == '.') {
                     continue;
                 }
-                int num = board[i][j];
+                char num = board[i][j];
                 rows[i].put(num, rows[i].getOrDefault(num, 0) + 1);
                 columns[j].put(num, columns[j].getOrDefault(num, 0) + 1);
                 int box_index = j / 3 + (i / 3) * 3;

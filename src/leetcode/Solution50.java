@@ -25,7 +25,7 @@ public class Solution50 {
 
 
     public static void main(String[] args) {
-        System.out.println(new Solution50().myPow(2, Integer.MIN_VALUE));
+        System.out.println(new Solution50().myPow(-1, Integer.MIN_VALUE));
     }
 
 }

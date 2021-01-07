@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.Arrays;
+
 public class Solution34 {
 
     public int binarySearch(int[] nums, int target, boolean isLeft) {
@@ -16,11 +18,19 @@ public class Solution34 {
     }
 
     public int[] searchRange(int[] nums, int target) {
+        if (nums == null || nums.length == 0)
+            return new int[]{-1, -1};
         int leftIndex = binarySearch(nums, target, true);
         if (leftIndex == nums.length || nums[leftIndex] != target)
             return new int[]{-1, -1};
         int rightIndex = binarySearch(nums, target, false);
         return new int[]{leftIndex, rightIndex - 1};
     }
+
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(new Solution34().searchRange(new int[]{5, 7, 7, 8, 8, 10}, 4)));
+    }
+
 
 }

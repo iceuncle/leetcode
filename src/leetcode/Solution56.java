@@ -22,10 +22,14 @@ import java.util.List;
  * 注意：输入类型已于2019年4月15日更改。 请重置默认代码定义以获取新方法签名。
  * <p>
  * [1, 3] [2, 6] [3, 7] [8,10]
+ * <p>
+ * [[1, 3], [2, 6], [8, 10], [15, 18]]
  */
 public class Solution56 {
     public int[][] merge(int[][] intervals) {
-        Arrays.sort(intervals, ((o1, o2) -> o1[0] - o2[0]));
+        if (intervals == null || intervals.length == 0)
+            return null;
+        Arrays.sort(intervals, (o1, o2) -> o1[0] - o2[0]);
         List<int[]> resList = new ArrayList<>();
         int i = 0;
         while (i < intervals.length) {
@@ -57,5 +61,9 @@ public class Solution56 {
             i = j;
         }
         return resList.toArray(new int[0][]);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.deepToString(new Solution56().merge(new int[][]{{1, 3}, {8, 10}, {2, 6}, {15, 18}})));
     }
 }

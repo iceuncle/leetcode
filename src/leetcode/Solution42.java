@@ -16,7 +16,8 @@ public class Solution42 {
             for (int j = i; j < height.length; j++) {
                 max_right = Math.max(max_right, height[j]);
             }
-            result += Math.max(max_left, max_right) - height[i];
+            System.out.println("i " + i + "  height " + height[i] + "  max_left " + max_left + "  max_right " + max_right);
+            result += Math.min(max_left, max_right) - height[i];
         }
         return result;
     }
@@ -55,6 +56,10 @@ public class Solution42 {
             stack.push(i);
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new Solution42().trap(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}));
     }
 
 
