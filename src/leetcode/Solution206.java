@@ -25,16 +25,15 @@ public class Solution206 {
     }
 
     public ListNode reverseList1(ListNode head) {
-        ListNode newHead = null;
-        ListNode p = head;
-
-        while (p != null) {
-            ListNode temp = p.next;
-            p.next = newHead;
-            newHead = p;
-            p = temp;
+        ListNode prev = null;
+        ListNode cur = head;
+        while (cur != null) {
+            ListNode temp = cur.next;
+            cur.next = prev;
+            prev = cur;
+            cur = temp;
         }
-        return newHead;
+        return prev;
     }
 
 }

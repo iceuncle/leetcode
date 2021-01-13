@@ -19,4 +19,24 @@ public class Solution69 {
         return res;
     }
 
+    public int mySqrt1(int x) {
+        int left = 0, right = x;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if ((long) mid * mid <= x) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return right;
+    }
+
+    public static void main(String[] args) {
+        new Solution69().mySqrt(9);
+        new Solution69().mySqrt(88);
+        new Solution69().mySqrt(Integer.MAX_VALUE);
+        new Solution69().mySqrt(2147395599);
+    }
+
 }

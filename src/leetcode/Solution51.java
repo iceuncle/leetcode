@@ -3,6 +3,9 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * N皇后 回溯
+ */
 public class Solution51 {
     public List<List<String>> solveNQueens(int n) {
         char[][] chess = new char[n][n];

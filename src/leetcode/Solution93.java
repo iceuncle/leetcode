@@ -25,28 +25,27 @@ public class Solution93 {
     public List<String> restoreIpAddresses(String s) {
         List<String> res = new ArrayList<>();
         Stack<String> path = new Stack<>();
-        backTracking(s, 0, s.length(), 4, path, res);
+        backTracking(s, 0, 4, path, res);
         return res;
     }
 
     /**
      * @param s      字符串
      * @param begin  当前处理的字符串位置
-     * @param len    字符串长度
      * @param count  剩余多少段
      * @param path   路径
      * @param result 结果
      */
-    public void backTracking(String s, int begin, int len, int count, Stack<String> path, List<String> result) {
-        if (begin == len) {
+    public void backTracking(String s, int begin, int count, Stack<String> path, List<String> result) {
+        if (begin == s.length()) {
             if (count == 0) {
                 result.add(String.join(".", path));
                 return;
             }
         }
-        for (int i = begin; i < begin + 3 && i < len; i++) {
+        for (int i = begin; i < begin + 3 && i < s.length(); i++) {
             //如果剩余字符长度大于剩余段*3 剪枝
-            if (len - i - 1 > (count - 1) * 3)
+            if (s.length() - i - 1 > (count - 1) * 3)
                 continue;
             int num = Integer.parseInt(s.substring(begin, i + 1));
             //如果数值大于255， 剪枝
@@ -56,7 +55,7 @@ public class Solution93 {
             if (String.valueOf(num).length() != i + 1 - begin)
                 continue;
             path.add(String.valueOf(num));
-            backTracking(s, i + 1, len, count - 1, path, result);
+            backTracking(s, i + 1, count - 1, path, result);
             path.pop();
         }
     }

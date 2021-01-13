@@ -10,14 +10,14 @@ package leetcode;
  * 由于单词长为 LL，故 \text{check(i, j, 0)}check(i, j, 0) 的时间复杂度为 O(3^L)O(3L)，
  * 而我们要执行 O(MN)O(MN) 次检查。然而，由于剪枝的存在，我们在遇到不匹配或已访问的字符时会提前退出，
  * 终止递归流程。因此，实际的时间复杂度会远远小于 \Theta(MN \cdot 3^L)Θ(MN⋅3L)。
- *
+ * <p>
  * 空间复杂度：O(MN)O(MN)。我们额外开辟了 O(MN)O(MN) 的 \text{visited}visited 数组，
  * 同时栈的深度最大为 O(\min(L, MN))O(min(L,MN))。
  */
 public class Solution79 {
 
     public boolean exist(char[][] board, String word) {
-        if (board == null || board.length == 0 || board[0].length == 0 || word.length() == 0)
+        if (board == null || board.length == 0 || board[0].length == 0 || word == null || word.length() == 0)
             return false;
         int row = board.length, col = board[0].length;
         boolean[][] visited = new boolean[row][col];
