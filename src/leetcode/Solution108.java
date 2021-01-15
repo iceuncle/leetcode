@@ -16,20 +16,18 @@ public class Solution108 {
     }
 
     public TreeNode sortedArrayToBST(int[] nums) {
-        if (nums == null || nums.length < 1) {
+        if (nums == null || nums.length == 0)
             return null;
-        }
         return solve(nums, 0, nums.length - 1);
     }
 
     private TreeNode solve(int[] nums, int left, int right) {
-        if (left <= right) {
-            int mid = left + (right - left) / 2;
-            TreeNode root = new TreeNode(nums[mid]);
-            root.left = solve(nums, left, mid - 1);
-            root.right = solve(nums, mid + 1, right);
-            return root;
-        }
-        return null;
+        if (left > right)
+            return null;
+        int mid = left + (right - left) / 2;
+        TreeNode root = new TreeNode(nums[mid]);
+        root.left = solve(nums, left, mid - 1);
+        root.right = solve(nums, mid + 1, right);
+        return root;
     }
 }

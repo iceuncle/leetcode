@@ -25,8 +25,8 @@ public class Solution96 {
 
 
     // 1 2 3 4 5 6 7
-    // 12  4567  j=3,n=7 G[2]*G[4]
-    //F[i] = G[j-1]*G[n-j]
+    // 12  4567  j=3,n=7 F[3] = G[2]*G[4]
+    //F[j] = G[j-1]*G[n-j]
     public int numTrees(int n) {
         int[] G = new int[n + 1];
         G[0] = 1;
