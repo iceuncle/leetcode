@@ -22,5 +22,5 @@ public class Solution125 {
         }
         return true;
     }
-    
+
 }

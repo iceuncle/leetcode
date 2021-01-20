@@ -29,6 +29,7 @@ public class Solution120 {
                 dp[i][j] = Math.min(dp[i + 1][j], dp[i + 1][j + 1]) + triangle.get(i).get(j);
             }
         }
+        System.out.println(Arrays.deepToString(dp));
         return dp[0][0];
     }
 
@@ -57,18 +58,24 @@ public class Solution120 {
 
 
     public static void main(String[] args) {
-        System.out.println(new Solution120().minimumTotal(new ArrayList<List<Integer>>() {{
-            add(new ArrayList<Integer>() {{
-                add(-1);
-            }});
+        System.out.println(new Solution120().minimumTotal1(new ArrayList<List<Integer>>() {{
             add(new ArrayList<Integer>() {{
                 add(2);
-                add(3);
             }});
             add(new ArrayList<Integer>() {{
+                add(3);
+                add(4);
+            }});
+            add(new ArrayList<Integer>() {{
+                add(6);
+                add(5);
+                add(7);
+            }});
+            add(new ArrayList<Integer>() {{
+                add(4);
                 add(1);
-                add(-1);
-                add(-3);
+                add(8);
+                add(3);
             }});
         }}));
     }

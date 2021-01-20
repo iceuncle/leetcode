@@ -40,8 +40,8 @@ public class Solution93 {
         if (begin == s.length()) {
             if (count == 0) {
                 result.add(String.join(".", path));
-                return;
             }
+            return;
         }
         for (int i = begin; i < begin + 3 && i < s.length(); i++) {
             //如果剩余字符长度大于剩余段*3 剪枝
@@ -55,7 +55,7 @@ public class Solution93 {
             if (String.valueOf(num).length() != i + 1 - begin)
                 continue;
             path.add(String.valueOf(num));
-            backTracking(s, i + 1, count - 1, path, result);
+            backTracking(s, i + 1, count - 1, path,     result);
             path.pop();
         }
     }

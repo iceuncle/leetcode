@@ -10,6 +10,15 @@ import java.util.Set;
  */
 public class Solution136 {
 
+    public int singleNumber2(int[] nums) {
+        int res = 0;
+        for (int i = 0; i < nums.length; i++) {
+            res = res ^ nums[i];
+        }
+        return res;
+    }
+
+
     public int singleNumber(int[] nums) {
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 1; i += 2) {
@@ -30,13 +39,6 @@ public class Solution136 {
         return set.iterator().next();
     }
 
-    public int singleNumber2(int[] nums) {
-        int res = 0;
-        for (int i = 0; i < nums.length; i++) {
-            res = res ^ nums[i];
-        }
-        return res;
-    }
 
 
     public static void main(String[] args) {

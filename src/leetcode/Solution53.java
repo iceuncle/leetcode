@@ -20,29 +20,18 @@ package leetcode;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class Solution53 {
-    public int maxSubArray(int[] nums) {
-        int max = nums[0];
-        for (int i = 0; i < nums.length; i++) {
-            int sum = 0;
-            for (int j = i; j < nums.length; j++) {
-                sum += nums[j];
-                if (max < sum) max = sum;
-            }
-        }
-        return max;
-    }
 
-    public int maxSubArray1(int[] nums) {
-        if (nums.length == 0) return 0;
+    public int maxSubArray(int[] nums) {
+        if (nums == null || nums.length == 0)
+            throw new IllegalArgumentException("nums cannot be empty");
         int[] sum = new int[nums.length];
         sum[0] = nums[0];
-        int max = nums[0];
+        int res = nums[0];
         for (int i = 1; i < nums.length; i++) {
-            int a = sum[i - 1] + nums[i];
-            sum[i] = Math.max(a, nums[i]);
-            if (max < sum[i]) max = sum[i];
+            sum[i] = Math.max(sum[i - 1] + nums[i], nums[i]);
+            res = Math.max(res, sum[i]);
         }
-        return max;
+        return res;
     }
 
     public int maxSubArray2(int[] nums) {
